@@ -1,0 +1,483 @@
+.producto-hover {
+    position: relative;
+    display: inline-block;
+}
+
+.producto-hover section {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #cfcfcf;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(46,110,27,0.08);
+    z-index: 10;
+    min-width: 180px;
+}
+
+.producto-hover:hover section {
+    display: block;
+}
+
+/* ESTILOS PARA INDEX PHP*/
+body { /* Estilos generales del body */
+    background-color: #2a6d88; /* Fondo azul */
+    font-family: 'Segoe UI', Arial, sans-serif; /* Fuente principal */
+    margin: 0; /* Sin margen exterior */
+    padding: 0; /* Sin relleno exterior */
+}
+
+.h1 { /* Título principal */
+    text-align: center; /* Centrado horizontal */
+    color: #000000; /* Color negro */
+    margin-top: 40px; /* Espacio arriba */
+    font-size: 2.5rem; /* Tamaño grande */
+}
+
+.h2 { /* Subtítulo */
+    text-align: center; /* Centrado horizontal */
+    color: #000000; /* Color negro */
+    margin-top: 40px; /* Espacio arriba */
+    font-size: 2.5rem; /* Tamaño grande */
+}
+
+.p { /* Párrafos */
+    color: #000000; /* Color negro */
+    font-family: "Helvetica Neue", Helvetica; /* Fuente secundaria */
+    margin: 5%; /* Margen alrededor */
+    text-align: center; /* Centrado horizontal */
+}
+
+.btn { /* Botón genérico */
+    display: block; /* Ocupa toda la línea */
+    width: 180px; /* Ancho fijo */
+    margin: 30px auto; /* Centrado y espacio vertical */
+    padding: 12px 0; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+    text-align: center; /* Centrado horizontal */
+    border-radius: 25px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    transition: background 0.3s; /* Transición de fondo */
+    box-shadow: #000000; /* Sombra (no definida correctamente) */
+    border: none; /* Sin borde */
+}
+
+.btn:hover { /* Efecto hover para botón genérico */
+    background-color: #bfc5b0; /* Fondo verde */
+    transform: scale(1.2); /* Aumenta tamaño */
+}
+
+.contenedor-index { /* Contenedor principal del index */
+    display: flex; /* Flexbox */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    gap: 40px; /* Espacio entre elementos */
+    width: 100%; /* Ancho completo */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.div-index1{ /* Primer bloque del index */
+    margin-top: 3%; /* Espacio arriba */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Columnas */
+    align-items: center; /* Centrado horizontal */
+}
+
+.div-index2 { /* Segundo bloque del index */
+    background: #3d8a26; /* Fondo verde */
+    border-radius: 16px; /* Bordes redondeados */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12); /* Sombra */
+    padding: 32px 24px; /* Espaciado interno */
+    margin-right: 5%; /* Espacio a la derecha */
+    margin-top: 3%; /* Espacio arriba */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Columnas */
+    align-items: center; /* Centrado horizontal */
+    max-width: 350px; /* Ancho máximo */
+    transition: box-shadow 0.3s; /* Transición de sombra */
+}
+
+.redes { /* Contenedor de redes sociales */
+    display: flex; /* Flexbox */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    gap: 10px; /* Espacio entre iconos */
+}
+
+.redesocioales-img { /* Imágenes de redes sociales */
+    width: 40px; /* Ancho fijo */
+    margin: 0 10px; /* Espacio horizontal */
+    vertical-align: middle; /* Centrado vertical */
+    transition: transform 0.2s; /* Transición de escala */
+}
+
+.empresa-img { /* Imagen de empresa */
+    width: 250px; /* Ancho fijo */
+    margin: 0 10px; /* Espacio horizontal */
+    vertical-align: middle; /* Centrado vertical */
+    transition: transform 0.2s; /* Transición de escala */
+}
+
+.redesocioales-img:hover { /* Efecto hover en iconos de redes */
+    transform: scale(2); /* Aumenta tamaño */
+}
+
+.pie { /* Pie de página */
+    display: flex; /* Flexbox */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    gap: 10px; /* Espacio entre elementos */
+    margin-top: 2%; /* Espacio arriba */
+    text-align: center; /* Centrado horizontal */
+}
+
+.redes { /* Redefinición de redes sociales */
+    margin-left: 5%; /* Espacio a la izquierda */
+    margin-right: 5%; /* Espacio a la derecha */
+    color: #000000; /* Color negro */
+    font-family: sans-serif; /* Fuente */
+}
+
+
+
+
+/* ESTILOS PARA INDEX PHP*/
+
+/* ESTILOS PARA login PHP*/
+
+
+
+
+.flip-container { /* Contenedor para efecto flip */
+  perspective: 1000px; /* Perspectiva 3D */
+  width: 350px; /* Ancho fijo */
+  height: 250px; /* Alto fijo */
+  margin: 40px auto; /* Centrado y espacio vertical */
+}
+.flipper { /* Elemento que gira */
+  position: relative; /* Relativo para posicionamiento */
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+  transition: transform 0.6s; /* Transición de giro */
+  transform-style: preserve-3d; /* Mantiene 3D al girar */
+}
+
+.flip-container.girado .flipper { /* Cuando está girado */
+  transform: rotateY(180deg); /* Gira 180 grados */
+}
+.front, .back { /* Caras del flip */
+  position: absolute; /* Posicionamiento absoluto */
+  width: 100%; /* Ancho completo */
+  height: 260%; /* Alto extendido */
+  backface-visibility: hidden; /* Oculta reverso */
+  background: #2e6e1b; /* Fondo verde */
+  border-radius: 16px; /* Bordes redondeados */
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12); /* Sombra */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Columnas */
+  align-items: center; /* Centrado horizontal */
+  justify-content: center; /* Centrado vertical */
+}
+.back {
+  transform: rotateY(180deg); /* Gira reverso */
+}
+
+.campo-form { /* Campos de formulario */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Columnas */
+    margin-bottom: 16px; /* Espacio abajo */
+}
+
+.campo-form label { /* Etiquetas de formulario */
+    margin-bottom: 4px; /* Espacio abajo */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Gris oscuro */
+}
+
+.input-login { /* Inputs de login */
+    padding: 8px 12px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 1px solid #bdbdbd; /* Borde gris */
+    font-size: 1rem; /* Tamaño de fuente */
+    outline: none; /* Sin contorno */
+    transition: border-color 0.2s; /* Transición de color de borde */
+}
+
+.input-login:focus { /* Input enfocado */
+    border-color: #2e6e1b; /* Borde verde */
+}
+
+.p-login { /* Párrafo de login */
+    color: #000000; /* Color negro */
+}
+
+
+
+
+
+/* ESTILOS PARA login PHP*/
+
+/* ESTILOS PARA home PHP*/
+
+
+
+
+/* Contenedor de botones de usuario en la esquina superior derecha */
+.head-botones { /* Contenedor de botones en esquina superior derecha */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 24px; /* Distancia desde arriba */
+    right: 32px; /* Distancia desde la derecha */
+    display: flex; /* Flexbox */
+    gap: 16px; /* Espacio entre botones */
+    z-index: 100; /* Encima de otros elementos */
+}
+
+/* Botón salir */
+.head-botones .btn-home { /* Botón de salir */
+    background: linear-gradient(90deg, #2e6e1b 60%, #69910d 100%); /* Degradado verde */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 22px; /* Bordes redondeados */
+    padding: 10px 28px; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    font-weight: 600; /* Negrita */
+    cursor: pointer; /* Cursor tipo mano */
+    text-decoration: none; /* Sin subrayado */
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s; /* Transiciones suaves */
+    box-shadow: 0 2px 8px rgba(46, 110, 27, 0.10); /* Sombra verde */
+    outline: none; /* Sin contorno */
+    display: flex; /* Flexbox */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+}
+
+.head-botones .btn-home:hover { /* Hover botón salir */
+    background: linear-gradient(90deg, #69910d 60%, #2e6e1b 100%); /* Degradado invertido */
+    transform: scale(1.08) translateY(-2px); /* Aumenta y sube */
+    box-shadow: 0 8px 24px rgba(46, 110, 27, 0.18), 0 2px 6px rgba(0,0,0,0.10); /* Sombra más fuerte */
+}
+
+/* Botón perfil */
+.head-botones .btn-perfil { /* Botón de perfil */
+    background: #fff; /* Fondo blanco */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Circular */
+    padding: 0; /* Sin relleno */
+    width: 48px; /* Ancho fijo */
+    height: 48px; /* Alto fijo */
+    box-shadow: 0 2px 8px rgba(46, 110, 27, 0.10); /* Sombra verde */
+    display: flex; /* Flexbox */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    cursor: pointer; /* Cursor tipo mano */
+    transition: box-shadow 0.2s, transform 0.2s; /* Transiciones suaves */
+}
+
+.head-botones .btn-perfil:hover { /* Hover botón perfil */
+    box-shadow: 0 8px 24px rgba(46, 110, 27, 0.18), 0 2px 6px rgba(0,0,0,0.10); /* Sombra más fuerte */
+    transform: scale(1.08); /* Aumenta tamaño */
+}
+
+.head-botones .head-home { /* Imagen de perfil en botón */
+    width: 36px; /* Ancho fijo */
+    height: 36px; /* Alto fijo */
+    object-fit: contain; /* Ajusta imagen */
+    border-radius: 50%; /* Circular */
+    background: #fff; /* Fondo blanco */
+}
+
+/* Contenedor principal */
+.home-contenedor { /* Contenedor principal de home */
+    display: flex; /* Flexbox */
+    flex-wrap: wrap; /* Permite varias líneas */
+    flex-direction: row; /* Dirección horizontal */
+    justify-content: center; /* Centrado horizontal */
+    align-items: flex-start; /* Arriba verticalmente */
+    gap: 40px; /* Espacio entre bloques */
+    width: 100%; /* Ancho completo */
+    margin-top: 60px; /* Espacio arriba */
+    padding: 0 24px; /* Espaciado lateral */
+    min-height: 70vh; /* Alto mínimo */
+    box-sizing: border-box; /* Incluye padding en ancho */
+    position: relative; /* Relativo para hijos absolutos */
+}
+
+/* Cada bloque de contenido */
+.home-div { /* Bloques de contenido */
+    background: #fff; /* Fondo blanco */
+    border-radius: 18px; /* Bordes redondeados */
+    box-shadow: 0 6px 24px rgba(46, 110, 27, 0.10), 0 1.5px 3px rgba(0,0,0,0.08); /* Sombra */
+    padding: 20px 16px; /* Espaciado interno reducido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+    max-width: 340px;
+    min-height: 180px; /* Menor alto mínimo */
+    transition: box-shadow 0.3s, transform 0.2s;
+    position: relative;
+}
+
+.home-div2{
+    background: #fff; /* Fondo blanco */
+    border-radius: 18px; /* Bordes redondeados */
+    box-shadow: 0 6px 24px rgba(46, 110, 27, 0.10), 0 1.5px 3px rgba(0,0,0,0.08); /* Sombra */
+    padding: 20px 16px; /* Espaciado interno reducido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 450px;
+    max-width: 510px;
+    min-height: 180px; /* Menor alto mínimo */
+    transition: box-shadow 0.3s, transform 0.2s;
+    position: relative;
+}
+
+.home-div:hover { /* Hover en bloques de contenido */
+    box-shadow: 0 12px 32px rgba(46, 110, 27, 0.18), 0 2px 8px rgba(0,0,0,0.12); /* Sombra más fuerte */
+    transform: translateY(-6px) scale(1.03); /* Sube y aumenta */
+}
+
+/* Imagen mediana y redondeada */
+.img-home { /* Imágenes de productos */
+    width: 140px; /* Ancho fijo */
+    height: 140px; /* Alto fijo */
+    object-fit: cover; /* Ajusta imagen */
+    border-radius: 16px; /* Bordes redondeados */
+    margin-bottom: 12px; /* Espacio abajo */
+    box-shadow: 0 2px 8px rgba(46, 110, 27, 0.10); /* Sombra */
+    background: #f4f4f4; /* Fondo gris claro */
+    transition: transform 0.2s; /* Transición de escala */
+}
+
+.btn-home .img-home,
+.btn-home:focus .img-home,
+.btn-home:hover .img-home { /* Efecto hover en imagen de botón */
+    transform: scale(1.08); /* Aumenta tamaño */
+}
+
+/* Botones de productos */
+.home-div .btn-home { /* Botones dentro de home-div */
+    background: #fff; /* Fondo blanco */
+    border: none; /* Sin borde */
+    border-radius: 16px; /* Bordes redondeados */
+    padding: 8px; /* Espaciado interno */
+    margin: 0; /* Sin margen */
+    box-shadow: none; /* Sin sombra por defecto */
+    transition: box-shadow 0.2s, transform 0.2s; /* Transiciones suaves */
+    cursor: pointer; /* Cursor tipo mano */
+    display: flex; /* Flexbox */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+}
+
+.home-div .btn-home:hover { /* Hover en botón de producto */
+    box-shadow: 0 4px 16px rgba(46, 110, 27, 0.15); /* Sombra verde */
+    background: #f8fbe9; /* Fondo verde claro */
+    transform: scale(1.05); /* Aumenta tamaño */
+}
+
+/* Responsive para móviles */
+@media (max-width: 900px) { /* Estilos para pantallas pequeñas */
+    .home-contenedor {
+        flex-direction: column; /* Columnas */
+        align-items: center; /* Centrado horizontal */
+        gap: 24px; /* Menos espacio entre bloques */
+        margin-top: 60px; /* Menos espacio arriba */
+    }
+    .home-div {
+        max-width: 95vw; /* Ancho casi completo */
+        min-width: 220px; /* Ancho mínimo menor */
+    }
+    .head-botones {
+        top: 10px; /* Menos espacio arriba */
+        right: 10px; /* Menos espacio derecha */
+        gap: 8px; /* Menos espacio entre botones */
+    }
+    .img-home {
+        width: 100px; /* Imágenes más pequeñas */
+        height: 100px; /* Imágenes más pequeñas */
+    }
+}
+
+/* Estilos para los campos de dirección de entrega */
+.datos-direccion {
+    margin-top: 20px; /* Espacio arriba */
+    padding: 12px; /* Espaciado interno */
+    background: #f8fbe9; /* Fondo verde claro */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(46,110,27,0.08); /* Sombra suave */
+    max-width: 400px; /* Ancho máximo */
+    width: 90%; /* Ancho completo en móviles */
+}
+
+.datos-direccion h3 {
+    margin-top: 0;
+    color: #2e6e1b; /* Verde principal */
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.datos-direccion p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+.input-direccion, .input-solicitud, .input-cantidad {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #bdbdbd;
+    font-size: 1rem;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.input-direccion:focus, .input-solicitud:focus, .input-cantidad:focus {
+    border-color: #2e6e1b;
+}
+
+
+/* Estilos para el botón de solicitar pedido */
+.btn {
+    display: block;
+    width: 180px;
+    margin: 30px auto 0 auto;
+    padding: 12px 0;
+    background: linear-gradient(90deg, #2e6e1b 60%, #69910d 100%);
+    color: #fff;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(46, 110, 27, 0.10);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #69910d 60%, #2e6e1b 100%);
+    transform: scale(1.08);
+}
+
+/* Responsive para el formulario de dirección */
+@media (max-width: 600px) {
+    .datos-direccion {
+        padding: 10px;
+        max-width: 98vw;
+    }
+    #map {
+        height: 180px;
+    }
+}
+/* ESTILOS PARA home PHP*/
